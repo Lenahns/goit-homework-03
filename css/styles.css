@@ -29,12 +29,12 @@ img {
 .page-header {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
+    border: 1px solid #E7E9FC;
 }
 
 .page-header-container {
 display: flex;
 justify-content: space-between;
-border: 1px solid #E7E9FC;
 }
 
 .list{
@@ -93,7 +93,11 @@ border: 1px solid #E7E9FC;
 }
 
 .menu {
-    column-gap: 40px;
+    gap: 40px;
+}
+
+.menu-item {
+    padding: 24px 0;
 }
 
 .menu-link {
@@ -118,7 +122,7 @@ border: 1px solid #E7E9FC;
     
 .address-list {
     font-style: normal; 
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .address-list-link {
@@ -151,11 +155,12 @@ button {
 .hero {
     background-color: #2E2F42;
     text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
 }
 
 .hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
     padding-left: auto;
     padding-right: auto;
     justify-content: center;
@@ -168,7 +173,7 @@ button {
     /* 107.143% */
     letter-spacing: 0.02em;
     color: var(--WHITE, #FFFFFF);
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -185,6 +190,13 @@ button {
     color: var(--WHITE, #FFFFFF);
     background: var(--IRIS, #4D5AE5);
     padding: 16px 32px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button:hover {
@@ -199,6 +211,11 @@ button {
 .benefits {
     margin-top: 120px;
     margin-bottom: 120px;
+    padding: 120px 0;
+}
+
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-list,
@@ -215,6 +232,7 @@ button {
     /* 120% */
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -244,8 +262,7 @@ button {
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
 
 .team-container {
@@ -263,6 +280,10 @@ button {
     text-transform: capitalize;
     color: var(--NAVY-BLUE, #2E2F42); 
     margin-bottom: 72px;   
+}
+
+.team-item-container {
+    padding: 32px 0;
 }
 
 .team-list-item {
@@ -299,6 +320,7 @@ button {
 .portfolio {
     margin-left: auto;
     margin-right: auto;
+    padding: 120px 0 120px 0;
 }
 
 .portfolio-header {
@@ -324,18 +346,17 @@ button {
 
 .portfolio-list-item {
     width: 360px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list img {
     box-sizing: border-box;
-    margin-bottom: 32px;
 }
 
 .portfolio-list-item-bottom {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-top: none;
     background: var(--WHITE, #FFF);
 
 }
