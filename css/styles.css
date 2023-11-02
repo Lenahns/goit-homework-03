@@ -11,6 +11,7 @@ ul,
 ol {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 }
 
 img {
@@ -215,7 +216,7 @@ button {
     padding: 120px 0;
 }
 
-.benefits-list {
+.benefits-list-item {
     width: calc((100% - 48px) / 3);
 }
 
@@ -346,7 +347,7 @@ button {
     row-gap: 48px;
 }
 
-.portfolio-list-item:first-child {
+.portfolio-list-item {
     width: calc((100% - 48px) / 3);
 }
 
