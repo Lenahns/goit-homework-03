@@ -217,7 +217,7 @@ button {
 }
 
 .benefits-list-item {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-list,
@@ -345,11 +345,11 @@ button {
     margin-bottom: 120px;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
+    
 }
 
-.portfolio-list-item {
-   
+.portfolio-list-item:first-child {
+    width: calc((100% - 48px) / 3);   
 }
 
 .portfolio-list img {
