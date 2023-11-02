@@ -345,10 +345,11 @@ button {
     margin-bottom: 120px;
     column-gap: 24px;
     row-gap: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-item {
-    width: calc((100% - 48px) / 3);   
+   
 }
 
 .portfolio-list img {
